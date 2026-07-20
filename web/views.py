@@ -8,7 +8,7 @@ def index (request) :
     }
 
     context["date"] = datetime.date.today()
-    return render(request,'index.html')
+    return render(request,'index.html',context)
 def about (request) :
     return HttpResponse("about")
 def contact (request) :
