@@ -7,7 +7,7 @@ def index (request) :
         "title" : "my home page"
     }
 
-    context{"date"} = datetime.date.today()
+    context["date"] = datetime.date.today()
     return render(request,'index.html')
 def about (request) :
     return HttpResponse("about")
