@@ -4,7 +4,7 @@ from django.http import HttpResponse
 def index (request) :
     import datetime
     context = {
-        "title" : "my home page"
+        "title" : "my home page",
     }
 
     context["date"] = datetime.date.today()
